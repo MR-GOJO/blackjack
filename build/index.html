@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+    img {
+      width: 125px;
+      height: 170px;
+    }
+  </style>
+  <body class="bg-green-800 min-h-screen flex items-center flex-col">
+    <h1 class="font-bold text-white text-4xl font-mono my-2">BLACKJACK</h1>
+    <h2 class="text-white font-bold my-2 font-mono text-xl">
+      Dealer: <span id="dealer-el"></span>
+    </h2>
+    <div id="dealer-cards" class="flex gap-4">
+      <img id="hidden" src="img/BACK.png" />
+    </div>
+
+    <h2 class="text-white font-bold my-2 font-mono text-xl">
+      You: <span id="you-el"></span>
+    </h2>
+    <div id="your-cards" class="flex gap-4"></div>
+
+    <div class="flex gap-2 m-4">
+      <button id="hit" class="bg-green-600 text-white px-4 py-1 rounded-xl font-bold border-black">Hit</button>
+      <button id="stay" class="bg-red-600 text-white px-4 py-1 rounded-xl font-bold">Stay</button>
+    </div>
+
+    <p id="message" class="text-white font-bold text-4xl"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
